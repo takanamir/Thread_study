@@ -3,10 +3,10 @@ package sample.gold.chap10;
 public class Sample10_2 {
 	public static void main(String[] args) {
 		// スレッドの作成
-		Thread3 threadA = new Thread3();
-		Thread4 threadB = new Thread4();
-		Thread a = new Thread(threadA);
-		Thread b = new Thread(threadB);
+		Thread3 thread3 = new Thread3();
+		Thread4 thread4 = new Thread4();
+		Thread a = new Thread(thread3);
+		Thread b = new Thread(thread4);
 		// スレッドの実行開始
 		a.start();
 		b.start();
