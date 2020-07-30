@@ -7,8 +7,8 @@ public class Sample10_18 {
 	public static void main(String[] args) {
 		ExecutorService service = null;
 		try {
-			service = Executors.newCachedThreadPool();
-			//service = Executors.newFixedThreadPool(2);
+//			service = Executors.newCachedThreadPool();
+			service = Executors.newFixedThreadPool(2);
 			Runnable task = () -> {
 				String name = Thread.currentThread().getName();
 				System.out.println(name + " : start");
